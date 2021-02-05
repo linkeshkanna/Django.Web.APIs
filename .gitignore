@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+venv-django/
 build/
 develop-eggs/
 dist/

@@ -1,0 +1,30 @@
+{
+    "workbench.settings.editor": "json",
+    "breadcrumbs.enabled": true,
+    "editor.minimap.enabled": true,
+    "editor.renderWhitespace": "none",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.trimAutoWhitespace": true,
+    "editor.renderControlCharacters": false,
+    "github.statusbar.color": false,
+    "git.autofetch": true,
+    "git.rebaseWhenSync": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "python.pythonPath": "venv-django\\Scripts\\python.exe",
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=125"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.maxNumberOfProblems": 10000,
+    "python.linting.pydocstyleEnabled": true,
+    "python.linting.pycodestyleArgs": [
+        "--max-line-length=125"
+    ]
+}
