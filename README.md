@@ -1,4 +1,4 @@
-# django.web.apis
+# django.web.apis project
 Web APIs Developed Using Python Django
 
 Getting Started:
