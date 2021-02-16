@@ -28,12 +28,10 @@ Templates:
 create templates folder under blog
 create blog folder under templates
 create template.html in blog folder
-
 blog -> templates -> blog -> home.html and about.html
 add blog.apps.BlogConfig in settings.py 
 add main.css in static\blog
 copy code snippets from bootstrap starter template
-
 bootstrap starter templates: https://getbootstrap.com/docs/4.0/getting-started/introduction/#starter-template
 code snippets: https://github.com/CoreyMSchafer/code_snippets/tree/master/Django_Blog/snippets
 django blog code: https://github.com/CoreyMSchafer/code_snippets/tree/master/Django_Blog
