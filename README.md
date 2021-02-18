@@ -36,3 +36,10 @@ bootstrap starter templates: https://getbootstrap.com/docs/4.0/getting-started/i
 code snippets: https://github.com/CoreyMSchafer/code_snippets/tree/master/Django_Blog/snippets
 django blog code: https://github.com/CoreyMSchafer/code_snippets/tree/master/Django_Blog
 
+Admin Page:
+python manage.py createsuperuser - No such table auth_user, because no tables created
+python manage.py makemigrations - to detect changes
+python manage.py migrate
+superuser username: linkesh
+superuser password: linkesh
+superuser email: linkeshkanna@gmail.com
