@@ -24,6 +24,7 @@ add urlpatterns in urls.py
 create def home(request): in views.py
 add path("blog/", include("blog.urls")) in MyBlogProject/urls.py
 
+
 Templates:
 create templates folder under blog
 create blog folder under templates
@@ -36,6 +37,7 @@ bootstrap starter templates: https://getbootstrap.com/docs/4.0/getting-started/i
 code snippets: https://github.com/CoreyMSchafer/code_snippets/tree/master/Django_Blog/snippets
 django blog code: https://github.com/CoreyMSchafer/code_snippets/tree/master/Django_Blog
 
+
 Admin Page:
 python manage.py createsuperuser - No such table auth_user, because no tables created
 python manage.py makemigrations - to detect changes
@@ -43,3 +45,48 @@ python manage.py migrate
 superuser username: linkesh
 superuser password: linkesh
 superuser email: linkeshkanna@gmail.com
+
+
+Database and Migrations:
+create "Post" model in models.py
+add columns aka attributes
+python manage.py makemigrations - create 0001_initials.py under migrations
+python .\manage.py sqlmigrate blog 0001 - show the SQL Query of the model
+python .\manage.py migrate - Run migration
+python manage.py shell - python django interactive shell
+
+>>> from blog.models import Post
+>>> from django.contrib.auth.models import User
+>>> User.objects.all()
+>>> User.objects.first()
+>>> User.objects.filter(username='linkesh')
+>>> User.objects.filter(username='linkesh').first()
+>>> user = User.objects.filter(username='linkesh').first()
+>>> user
+>>> user.id
+>>> user.pk
+>>> user = User.objects.get(id=1)                             
+>>> user.name
+>>> Post.objects.all()                                     
+>>> post_1 = Post(title='Blog 1', content='First post content!', author=user)
+>>> Post.objects.all()
+>>> post_1.save()
+>>> Post.objects.all()
+>>> exit()
+
+>>> from blog.models import Post
+>>> from django.contrib.auth.models import User
+>>> Post.objects.all()
+>>> user = User.objects.filter(username='linkesh').first()
+>>> post_1 = Post(title='Blog 2', content='Second post content!', author_id=user.id)
+>>> post_1.save() 
+>>> Post.objects.all()
+>>> post = Post.objects.first()
+>>> post.content
+>>> post.date_posted
+>>> post.author
+>>> post.author.email
+>>> user.post_set.all()
+>>> user.post_set.create(title='Blog 1', content='Third post content!')                  
+>>> Post.objects.all()
+>>> exit()
