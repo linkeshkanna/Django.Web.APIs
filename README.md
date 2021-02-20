@@ -95,3 +95,11 @@ python manage.py shell - python django interactive shell
 User Registration:
 python manage.py startapp users - This will create folder "users" and py files in MyBlogProject
 add 'users.apps.UsersConfig' in settings.py
+add forms.py and inherit UserCreationForm in users app
+create register.html in users apps /templates/users
+add 'register' method in views.py
+in project urls.py add path("register/", user_views.register, name="register")
+in base.html add messages loop
+add CRISPY_TEMPLATE_PACK = 'bootstrap4' in settings.py
+add 'crispy_forms' in settings.py
+
