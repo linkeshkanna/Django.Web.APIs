@@ -90,3 +90,8 @@ python manage.py shell - python django interactive shell
 >>> user.post_set.create(title='Blog 1', content='Third post content!')                  
 >>> Post.objects.all()
 >>> exit()
+
+
+User Registration:
+python manage.py startapp users - This will create folder "users" and py files in MyBlogProject
+add 'users.apps.UsersConfig' in settings.py
