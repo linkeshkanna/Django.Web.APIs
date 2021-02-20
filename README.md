@@ -103,3 +103,10 @@ in base.html add messages loop
 add CRISPY_TEMPLATE_PACK = 'bootstrap4' in settings.py
 add 'crispy_forms' in settings.py
 
+
+Login/Logout:
+https://github.com/linkeshkanna/Django.Web.APIs/commit/3e5e2c3e04977a3b8ab92c7f77ebb86bcf2360ce
+
+
+
+
